@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // You can handle the error here, for example:
         if (error === 0) {
             form.classList.add('_sending');
-            let response = await fetch('new.php', {
+            let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
             });
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     const formImage = document.getElementById('formImage'); // Corrected ID
-    const formPreview = document.getElementById('formPreview'); // Corrected ID
+    const formPreview = document.getElementById('formPrevew'); // Corrected ID
 
     formImage.addEventListener('change', () => {
         uploadFile(formImage.files[0]);
