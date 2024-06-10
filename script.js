@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // You can handle the error here, for example:
         if (error === 0) {
             form.classList.add('_sending');
-            let response = await fetch('sendmail.php', {
+            let response = await fetch('new.php', {
                 method: 'POST',
                 body: formData
             });
